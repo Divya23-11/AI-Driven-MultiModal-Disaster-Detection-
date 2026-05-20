@@ -1,0 +1,144 @@
+/* ===== PAGE BACKGROUND ===== */
+.image-page-bg {
+  min-height: 100vh;
+  padding: 80px 20px;
+  background: linear-gradient(
+    135deg,
+    #0f2027,
+    #203a43,
+    #2c5364
+  );
+  position: relative;
+  overflow: hidden;
+}
+
+/* FLOATING COLOR BLOBS */
+.image-page-bg::before,
+.image-page-bg::after {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.6;
+  z-index: 0;
+}
+
+.image-page-bg::before {
+  background: #ff416c;
+  top: -140px;
+  left: -140px;
+}
+
+.image-page-bg::after {
+  background: #396afc;
+  bottom: -160px;
+  right: -160px;
+}
+
+/* ===== MAIN DASHBOARD ===== */
+.image-dashboard {
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 40px;
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 40px 80px rgba(0,0,0,0.35);
+  position: relative;
+  z-index: 1;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.image-dashboard h1 {
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #555;
+  margin-bottom: 45px;
+}
+
+/* ===== UPLOAD ===== */
+.upload-card {
+  border: 2px dashed #396afc;
+  padding: 35px;
+  text-align: center;
+  border-radius: 16px;
+  background: #f8faff;
+  margin-bottom: 40px;
+}
+
+/* ===== IMAGE PREVIEW ===== */
+.preview-card {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.preview-card img {
+  max-width: 100%;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+/* ===== STATUS ===== */
+.status-card {
+  background: #0f172a;
+  color: #e5e7eb;
+  padding: 25px;
+  border-radius: 16px;
+  margin-bottom: 40px;
+}
+
+.status-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.status-card li {
+  padding: 6px 0;
+  font-size: 15px;
+}
+
+/* ===== RESULT ===== */
+.result-card {
+  background: linear-gradient(135deg, #e0e7ff, #f1f5ff);
+  padding: 30px;
+  border-radius: 18px;
+  margin-bottom: 30px;
+}
+
+.result-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.result-grid div {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.result-grid span {
+  display: block;
+  font-size: 13px;
+  color: #555;
+}
+
+.result-grid b {
+  font-size: 18px;
+}
+
+/* ===== FUSION NOTE ===== */
+.fusion-note {
+  background: #e6fffa;
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 15px;
+  text-align: center;
+  color: #065f46;
+}

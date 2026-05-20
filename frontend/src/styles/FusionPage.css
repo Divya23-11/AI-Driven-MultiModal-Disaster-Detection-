@@ -1,0 +1,111 @@
+.fusion-page-bg {
+  min-height: 100vh;
+  background: radial-gradient(circle at top left, #0f766e, #020617);
+  padding: 80px 20px;
+}
+
+.fusion-dashboard {
+  max-width: 1200px;
+  margin: auto;
+  font-family: "Segoe UI", sans-serif;
+  color: #0f172a;
+}
+
+.fusion-dashboard h1 {
+  text-align: center;
+  font-size: 42px;
+  color: white;
+}
+
+.subtitle {
+  text-align: center;
+  color: #cbd5f5;
+  margin-bottom: 60px;
+}
+
+/* SOURCES */
+.fusion-sources {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.fusion-card {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.fusion-card span {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.fusion-card.image { border-left: 6px solid #6366f1; }
+.fusion-card.text { border-left: 6px solid #22c55e; }
+.fusion-card.sensor { border-left: 6px solid #f97316; }
+
+/* STATUS */
+.fusion-status {
+  background: #020617;
+  color: #e5e7eb;
+  padding: 30px;
+  border-radius: 18px;
+  margin-bottom: 45px;
+}
+
+.fusion-status ul {
+  list-style: none;
+  padding: 0;
+}
+
+.fusion-status li {
+  padding: 6px 0;
+}
+
+/* RESULT */
+.fusion-result {
+  background: linear-gradient(135deg, #ecfeff, #f0fdfa);
+  padding: 35px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.fusion-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.fusion-grid span {
+  font-size: 13px;
+  color: #555;
+}
+
+.fusion-grid b {
+  font-size: 20px;
+}
+
+.critical {
+  color: #dc2626;
+}
+
+.fusion-recommendation {
+  margin-top: 25px;
+  background: #fee2e2;
+  padding: 18px;
+  border-radius: 14px;
+  font-size: 16px;
+  color: #7f1d1d;
+}
+
+/* EXPLAIN */
+.fusion-explain {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}

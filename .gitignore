@@ -1,0 +1,6 @@
+venv/
+*.h5
+*.csv
+__pycache__/
+.env
+node_modules/

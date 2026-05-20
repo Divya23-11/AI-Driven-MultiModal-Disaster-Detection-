@@ -1,0 +1,253 @@
+/* ===== GLOBAL BACKGROUND (SAME AS IMAGE/TEXT PAGE) ===== */
+.global-bg {
+  min-height: 100vh;
+  padding: 80px 20px;
+  background: linear-gradient(
+    135deg,
+    #0f2027,
+    #203a43,
+    #2c5364
+  );
+  position: relative;
+  overflow: hidden;
+}
+
+/* 🔥 FLOATING BLOBS */
+.global-bg::before,
+.global-bg::after {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.6;
+  z-index: 0;
+}
+
+.global-bg::before {
+  background: #ff416c;
+  top: -140px;
+  left: -140px;
+}
+
+.global-bg::after {
+  background: #396afc;
+  bottom: -160px;
+  right: -160px;
+}
+
+/* ===== SENSOR DASHBOARD ===== */
+.sensor-dashboard {
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 30px;
+  font-family: "Segoe UI", sans-serif;
+
+  background: rgba(255,255,255,0.95);
+  border-radius: 22px;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.35);
+
+  backdrop-filter: blur(10px);
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== HEADER ===== */
+.sensor-dashboard h1 {
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #555;
+  margin-bottom: 45px;
+}
+
+/* ===== SENSOR INPUT ===== */
+.sensor-input-card {
+  background: #f8faff;
+  padding: 30px;
+  border-radius: 16px;
+  margin-bottom: 40px;
+}
+
+/* INPUTS */
+.sensor-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.sensor-vertical label {
+  font-size: 14px;
+  color: #555;
+}
+
+.sensor-vertical input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background: #eef2ff;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.sensor-vertical input:focus {
+  outline: none;
+  border-color: #396afc;
+  transform: scale(1.02);
+  box-shadow: 0 0 10px rgba(57,106,252,0.3);
+}
+
+/* ===== BUTTON ===== */
+.sensor-input-card button {
+  background: linear-gradient(135deg, #396afc, #2948ff);
+  border: none;
+  padding: 14px 30px;
+  border-radius: 25px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sensor-input-card button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* ===== STATUS ===== */
+.status-card {
+  background: #0f172a;
+  color: #e5e7eb;
+  padding: 25px;
+  border-radius: 16px;
+  margin-bottom: 40px;
+}
+
+.status-card h3 {
+  margin-bottom: 15px;
+}
+
+.status-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.status-card li {
+  padding: 6px 0;
+  font-size: 15px;
+}
+
+/* ===== RESULT ===== */
+.result-card {
+  margin-top: 30px;
+  padding: 25px;
+  border-radius: 18px;
+
+  background: rgba(15, 23, 42, 0.9);
+  color: white;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+}
+
+.result-card h3 {
+  margin-bottom: 20px;
+  color: #22c55e;
+  font-size: 20px;
+}
+
+/* GRID */
+.result-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.result-grid div {
+  background: rgba(255,255,255,0.08);
+  padding: 16px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.result-grid div:hover {
+  transform: scale(1.05);
+  background: rgba(255,255,255,0.15);
+}
+
+.result-grid span {
+  display: block;
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.result-grid b {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+/* ===== SEVERITY COLORS ===== */
+.high {
+  color: #ef4444;
+}
+
+.medium {
+  color: #f59e0b;
+}
+
+.low {
+  color: #22c55e;
+}
+
+/* ===== FUSION NOTE ===== */
+.fusion-note {
+  background: #e6fffa;
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 15px;
+  text-align: center;
+  color: #065f46;
+  margin-top: 20px;
+}
+
+/* ===== EXPLANATION CARD ===== */
+.explain-card {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  margin-bottom: 30px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.explain-card h3 {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.explain-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.explain-grid div {
+  background: #f8fafc;
+  padding: 18px;
+  border-radius: 14px;
+}
+
+.explain-grid h4 {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.explain-grid p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+}

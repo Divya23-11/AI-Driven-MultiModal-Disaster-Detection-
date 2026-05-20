@@ -1,0 +1,163 @@
+/* ===== PAGE BACKGROUND (SAME AS IMAGE PAGE) ===== */
+.text-v2-bg {
+  min-height: 100vh;
+  padding: 80px 20px;
+  background: linear-gradient(
+    135deg,
+    #0f2027,
+    #203a43,
+    #2c5364
+  );
+  position: relative;
+  overflow: hidden;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* 🔥 FLOATING BLOBS */
+.text-v2-bg::before,
+.text-v2-bg::after {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.6;
+  z-index: 0;
+}
+
+.text-v2-bg::before {
+  background: #ff416c;
+  top: -140px;
+  left: -140px;
+}
+
+.text-v2-bg::after {
+  background: #396afc;
+  bottom: -160px;
+  right: -160px;
+}
+
+/* ===== LAYOUT ===== */
+.text-v2-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== LEFT PANEL ===== */
+.text-input-panel {
+  background: white;
+  padding: 45px;
+  border-radius: 24px;
+  box-shadow: 0 30px 70px rgba(0,0,0,0.35);
+}
+
+.text-input-panel h1 {
+  font-size: 36px;
+}
+
+.desc {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* TEXTAREA */
+textarea {
+  width: 100%;
+  min-height: 180px;
+  padding: 16px;
+  border-radius: 14px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* BUTTON */
+button {
+  margin-top: 18px;
+  padding: 14px 36px;
+  border-radius: 28px;
+  border: none;
+  background: linear-gradient(135deg, #396afc, #2948ff);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* ===== KEYWORDS ===== */
+.keyword-box {
+  margin-top: 35px;
+}
+
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.chip {
+  background: #e0f2fe;
+  color: #0369a1;
+  padding: 8px 16px;
+  border-radius: 22px;
+  font-size: 14px;
+}
+
+/* ===== RIGHT PANEL ===== */
+.text-ai-panel {
+  background: linear-gradient(135deg, #020617, #0f172a);
+  color: #e5e7eb;
+  padding: 45px;
+  border-radius: 24px;
+  box-shadow: 0 30px 70px rgba(0,0,0,0.35);
+}
+
+/* PIPELINE */
+.pipeline {
+  list-style: none;
+  padding: 0;
+  margin-top: 25px;
+}
+
+.pipeline li {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  font-size: 16px;
+}
+
+/* ===== SUMMARY ===== */
+.ai-summary {
+  margin-top: 35px;
+  background: #020617;
+  padding: 30px;
+  border-radius: 18px;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.summary-grid span {
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.summary-grid b {
+  font-size: 18px;
+}
+
+/* ===== FUSION ===== */
+.fusion-banner {
+  margin-top: 25px;
+  background: #022c22;
+  padding: 16px;
+  border-radius: 14px;
+  text-align: center;
+  color: #86efac;
+  font-size: 15px;
+}

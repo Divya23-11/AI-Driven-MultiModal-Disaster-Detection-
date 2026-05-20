@@ -1,0 +1,8 @@
+flask
+flask-cors
+mysql-connector-python
+tensorflow
+numpy
+pillow
+scikit-learn
+joblib
