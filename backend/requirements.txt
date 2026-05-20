@@ -1,8 +1,1 @@
-flask
-flask-cors
-mysql-connector-python
 tensorflow==2.12.0
-numpy
-pillow
-scikit-learn
-joblib
